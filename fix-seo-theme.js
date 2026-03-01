@@ -39,7 +39,7 @@ function fixSearch() {
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>`;
   html = html.replace(/<head>[\s\S]*?<\/head>/, newHead);
-  html = html.replace(/<img src="assets\/img\/logo\.png" height="30">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="30">');
+  html = html.replace(/<img src="assets\/img\/logo\.png" height="60">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="60">');
   html = html.replace(/placeholder="Text to search\.\.\."(?!\s*aria-label)/, 'placeholder="Search unblocked games..." aria-label="Search games"');
   fs.writeFileSync(file, html);
   console.log('Fixed: search.html');
@@ -104,7 +104,7 @@ function fixLegalPages() {
     if (!html.includes('rel="canonical"')) {
       html = html.replace(/(<meta name="description" content="[^"]*">)/, `$1${extraMeta}`);
     }
-    html = html.replace(/<img src="assets\/img\/logo\.png" height="30">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="30">');
+    html = html.replace(/<img src="assets\/img\/logo\.png" height="60">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="60">');
     html = html.replace(/placeholder="Text to search\.\.\."(?!\s*aria-label)/, 'placeholder="Search unblocked games..." aria-label="Search games"');
     fs.writeFileSync(p.file, html);
     console.log('Fixed:', slug + '/index.html');
@@ -143,7 +143,7 @@ function fixGamePages() {
       );
     }
     if (!content.includes('alt="Unblocked Free Games"')) {
-      content = content.replace(/<img src="assets\/img\/logo\.png" height="30">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="30">');
+      content = content.replace(/<img src="assets\/img\/logo\.png" height="60">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="60">');
     }
     content = content.replace(/placeholder="Text to search\.\.\."(?!\s*aria-label)/, 'placeholder="Search unblocked games..." aria-label="Search games"');
     fs.writeFileSync(filePath, content);
@@ -160,7 +160,7 @@ function fixCategoryPages() {
     const filePath = path.join(catDir, f);
     let content = fs.readFileSync(filePath, 'utf8');
     if (!content.includes('alt="Unblocked Free Games"')) {
-      content = content.replace(/<img src="assets\/img\/logo\.png" height="30">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="30">');
+      content = content.replace(/<img src="assets\/img\/logo\.png" height="60">/, '<img src="assets/img/logo.png" alt="Unblocked Free Games" height="60">');
     }
     content = content.replace(/placeholder="Text to search\.\.\."(?!\s*aria-label)/, 'placeholder="Search unblocked games..." aria-label="Search games"');
     fs.writeFileSync(filePath, content);
