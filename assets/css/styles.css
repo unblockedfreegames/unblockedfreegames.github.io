@@ -51,6 +51,58 @@ h4, .h4 {
   padding-bottom: 0.75rem;
 }
 
+/* Header: black bg, white text */
+header .navbar,
+header nav.navbar {
+  background-color: #000 !important;
+}
+
+header .navbar .navbar-brand,
+header .navbar .nav-link,
+header .navbar .category-btn a,
+header .navbar .form-search .form-control {
+  color: #fff !important;
+}
+
+header .navbar .form-search .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+header .navbar .category-btn a {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+header .navbar .category-btn a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff !important;
+}
+
+header .navbar .form-search {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+header .navbar .form-search svg,
+header .navbar .form-search .input-group-text {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+header .navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+header .navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+header .navbar .nav-link svg,
+header .navbar .bi-search {
+  color: #fff;
+}
+
+header .navbar a.social .social-button img {
+  filter: brightness(0) invert(1);
+}
+
 .category-btn {
   display: flex;
   align-items: center;
