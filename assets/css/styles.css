@@ -58,6 +58,19 @@ header nav.navbar {
 }
 
 header .navbar .navbar-brand,
+header .navbar .navbar-brand-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff !important;
+  text-decoration: none;
+}
+
+header .navbar .navbar-brand:hover,
+header .navbar .navbar-brand-text:hover {
+  color: #fff !important;
+  text-decoration: none;
+}
+
 header .navbar .nav-link,
 header .navbar .category-btn a,
 header .navbar .form-search .form-control {
