@@ -29,7 +29,7 @@ window.addEventListener("load", (event) => {
         console.log('Bot Browser');
     } else {
         console.log('Human Browser');
-        if (window.location.href.indexOf("/unblockedfreegames66.gitlab.io")> -1) {
+        if (window.location.href.indexOf("/unblockedgames66.gitlab.io")> -1) {
             if (inFrame()) {
                 console.log("Adsense Skip! Frame!");
             } else if (window.location.href.indexOf(".html")== -1) {
