@@ -239,7 +239,7 @@ h4, .h4 {
   bottom: 0;
 }
 
-.card-masonry .card h3, .card-masonry .card .h3 {
+.card-masonry .card .title-text, .card-masonry .card h3, .card-masonry .card .h3 {
   font-size: 0.70rem;
   display: -webkit-box;
   -webkit-line-clamp: 1;
@@ -257,16 +257,22 @@ h4, .h4 {
   height: 15px;
   top: 105px;
   left: 0px;
+  margin: 0;
 }
 
-.card-masonry .card.large h3, .card-masonry .card.large .h3 {
+.card-masonry .card.large .title-text, .card-masonry .card.large h3, .card-masonry .card.large .h3 {
   font-size: 1.1rem;
   top: 200px;
   height: 24px;
   width: 150px;
 }
 
-.heading h3 {
+.heading .title-text, .heading h3, .title-text.heading {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.heading-page .title-text, .heading-page h3 {
   font-weight: 600;
   font-size: 1.25rem;
 }
