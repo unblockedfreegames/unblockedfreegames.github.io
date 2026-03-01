@@ -103,6 +103,10 @@ header .navbar a.social .social-button img {
   filter: brightness(0) invert(1);
 }
 
+header .navbar .d-flex.ms-xl-auto {
+  gap: 0.5rem;
+}
+
 .category-btn {
   display: flex;
   align-items: center;
