@@ -434,3 +434,33 @@ h4, .h4 {
   --bs-tooltip-opacity: 0.9;
 }
 
+/* Game title row + fullscreen button */
+.game-title-row {
+  gap: 0.75rem;
+}
+
+.btn-fullscreen {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #624de3;
+  background: #EFF2F5;
+  border: 1px solid #e0e3e9;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-fullscreen:hover {
+  background: #624de3;
+  color: #fff;
+  border-color: #624de3;
+}
+
+.btn-fullscreen svg {
+  flex-shrink: 0;
+}
+
