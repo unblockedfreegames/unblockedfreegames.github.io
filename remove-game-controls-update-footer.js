@@ -1,6 +1,6 @@
 /**
  * Remove game page controls: share, gameplays, like/dislike, card-category, rating stars.
- * Update footer: Copyright © 2026 Just play Games / AI ROYALE
+ * Update footer: Copyright © 2026 Unblocked Free Games
  * Run: node remove-game-controls-update-footer.js
  */
 
@@ -21,9 +21,9 @@ const shareRegex = /<div data-bs-toggle="tooltip" data-bss-tooltip="" class="dro
 // 4. Remove w-lg-200 block (gameplays, progress bar, like/dislike)
 const gameplaysBlockRegex = /<div class="w-lg-200 ms-4">[\s\S]*?dislike-count">[\s\S]*?<\/span>\s*<\/div>\s*<\/div>\s*/g;
 
-// 5. Footer: update to Copyright © 2026 Just play Games / AI ROYALE
-const footerRegex = /<div class="fs-xs"><span>Copyright © 2024 Unblocked Free Games\. All rights reserved\.<\/span>\s*(?:<p>[^<]*<\/p>\s*)?<\/div>/g;
-const footerReplacement = '<div class="fs-xs"><span>Copyright © 2026 Just play Games / AI ROYALE</span></div>';
+// 5. Footer: update to Copyright © 2026 Unblocked Free Games
+const footerRegex = /<div class="fs-xs"><span>Copyright © 2026 Unblocked Free Games\. All rights reserved\.<\/span>\s*(?:<p>[^<]*<\/p>\s*)?<\/div>/g;
+const footerReplacement = '<div class="fs-xs"><span>Copyright © 2026 Unblocked Free Games</span></div>';
 
 function processGameFile(filePath) {
   let html = fs.readFileSync(filePath, 'utf8');

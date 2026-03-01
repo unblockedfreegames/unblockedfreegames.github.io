@@ -6,7 +6,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE = 'https://unblockedfreegames.github.io/unblockedgames.github.io';
+const BASE = 'https://unblockedfreegames.github.io';
 const CAT_DIR = path.join(__dirname, 'category');
 
 const SEO = {

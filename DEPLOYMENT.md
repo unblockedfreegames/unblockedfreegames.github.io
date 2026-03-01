@@ -9,7 +9,7 @@ Your site is now configured to work on **both** user sites and project sites. Fo
 - Go to [github.com/new](https://github.com/new)
 - Name your repository:
   - **For root URL** (e.g., `https://yourusername.github.io/`): Use `yourusername.github.io`
-  - **For project URL** (e.g., `https://yourusername.github.io/unblockedgames.github.io/`): Use any name like `unblockedgames.github.io`
+  - **For project URL** (e.g., `https://yourusername.github.io/unblockedfreegames.github.io/`): Use any name like `unblockedfreegames.github.io`
 
 ### 2. Push your code
 
