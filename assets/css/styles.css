@@ -40,11 +40,21 @@ h4, .h4 {
 
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
-  padding-top: 30px;
   padding-right: var(--bs-gutter-x, 1rem);
   padding-left: var(--bs-gutter-x, 1rem);
   margin-right: auto;
   margin-left: auto;
+}
+
+/* Top padding for main content only (not header) */
+main .container,
+main .container-fluid,
+main .container-xxl,
+main .container-xl,
+main .container-lg,
+main .container-md,
+main .container-sm {
+  padding-top: 30px;
 }
 
 .navbar {
@@ -52,7 +62,12 @@ h4, .h4 {
   padding-bottom: 0.75rem;
 }
 
-/* Header: black bg, white text */
+/* Header: black bg, white text - ensure no container padding breaks layout */
+header .navbar .container-fluid {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 header .navbar,
 header nav.navbar {
   background-color: #000 !important;
