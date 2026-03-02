@@ -40,6 +40,7 @@ h4, .h4 {
 
 .container, .container-fluid, .container-xxl, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
+  padding-top: 30px;
   padding-right: var(--bs-gutter-x, 1rem);
   padding-left: var(--bs-gutter-x, 1rem);
   margin-right: auto;
