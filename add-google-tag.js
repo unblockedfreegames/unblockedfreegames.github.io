@@ -3,12 +3,12 @@ const fs = require('fs');
 const path = require('path');
 
 const googleTag = `<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XGDBPH2VRD"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CBG0EE0K9V"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XGDBPH2VRD');
+  gtag('config', 'G-CBG0EE0K9V');
 </script>
 `;
 
@@ -40,7 +40,7 @@ const htmlFiles = [
 let count = 0;
 for (const file of htmlFiles) {
   let content = fs.readFileSync(file, 'utf8');
-  if (content.includes('G-XGDBPH2VRD')) continue; // Already has it
+  if (content.includes('G-CBG0EE0K9V')) continue; // Already has it
   if (!content.includes('<head>')) continue;
   content = content.replace('<head>', '<head>\n' + googleTag);
   fs.writeFileSync(file, content);
